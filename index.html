@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simon game</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            margin: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .all-boxes{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        .red{
+            background-color: rgb(255, 88, 88);
+        }
+        .yellow{
+            background-color: rgb(247, 247, 84);
+        }
+        .orange{
+            background-color: rgb(255, 186, 58);
+        }
+        .blue{
+            background-color: rgb(122, 122, 253);
+        }
+        .green{
+            background-color: green;
+        }
+        .flash{
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Simon Game</h1>
+    <h2 class="level">Press any key to start game</h2>
+    <div class="all-boxes">
+        <div class="left">
+            <div class="box red" id="red">first</div>
+            <div class="box yellow" id="yellow">second</div>
+        </div>
+        <div class="right">
+            <div class="box orange" id="orange">third</div>
+            <div class="box blue" id="blue">fourth</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
